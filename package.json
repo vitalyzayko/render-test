@@ -6,7 +6,7 @@
     "start": "node index.js",
     "dev": "node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "rm -rf dist && cd ../fullstack/part2/learning && npm run build && cp -r dist ../../render-test",
+    "build:ui": "rm -rf dist && cd ../fullstack/part2/learning && npm run build && cp -r dist ../../../render-test",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "repository": {
@@ -21,7 +21,6 @@
   "homepage": "https://github.com/vitalyzayko/fullstack#readme",
   "description": "",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^5.2.1"
   }
 }
